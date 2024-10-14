@@ -1,4 +1,5 @@
 import 'package:ecommerce/feacture/home/presentation/widgets/app_bar_section/custom_appbar.dart';
+import 'package:ecommerce/feacture/home/presentation/widgets/products_section/product_item.dart';
 import 'package:flutter/material.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -12,6 +13,8 @@ class HomeViewBody extends StatelessWidget {
         child: Column(
           children: [
             CustomAppBar(),
+            SizedBox(height: 32),
+            ProductItem(),
           ],
         ),
       ),

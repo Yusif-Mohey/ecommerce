@@ -1,3 +1,4 @@
+import 'package:ecommerce/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -23,7 +24,8 @@ class CustomSearchAppBar extends StatelessWidget {
               decoration: InputDecoration(
                 border: InputBorder.none,
                 hintText: 'Search for product',
-                hintStyle: TextStyle(color: Colors.grey.withOpacity(0.8)),
+                hintStyle: Styles.textStyle16
+                    .copyWith(color: Colors.grey.withOpacity(0.7)),
               ),
             ),
           ),
