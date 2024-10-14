@@ -2,7 +2,6 @@ import 'package:ecommerce/core/constants/app_color.dart';
 import 'package:ecommerce/core/constants/app_images.dart';
 import 'package:ecommerce/core/utils/styles.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class ProductItem extends StatelessWidget {
   const ProductItem({super.key});
@@ -13,9 +12,18 @@ class ProductItem extends StatelessWidget {
       width: double.infinity,
       height: MediaQuery.of(context).size.height / 4,
       decoration: BoxDecoration(
-          color: Colors.white, borderRadius: BorderRadius.circular(24)),
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(24),
+          boxShadow: [
+            BoxShadow(
+                color: Colors.black.withOpacity(0.2),
+                offset: const Offset(0, 10.0),
+                spreadRadius: 0.1,
+                blurRadius: 30,
+                blurStyle: BlurStyle.normal)
+          ]),
       child: Padding(
-        padding: const EdgeInsets.all(12.0),
+        padding: const EdgeInsets.all(16.0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
@@ -46,7 +54,10 @@ class ProductItem extends StatelessWidget {
                       const Spacer(),
                       IconButton(
                         onPressed: () {},
-                        icon: const FaIcon(FontAwesomeIcons.cartShopping),
+                        icon: Icon(
+                          Icons.shopping_cart_outlined,
+                          color: AppColor.kAppColors[2],
+                        ),
                       ),
                     ],
                   ),
@@ -59,3 +70,56 @@ class ProductItem extends StatelessWidget {
     );
   }
 }
+
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
+//search for  web socket
