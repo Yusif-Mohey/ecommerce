@@ -1,5 +1,5 @@
+import 'package:ecommerce/feacture/home/presentation/screen/home_view.dart';
 import 'package:ecommerce/feacture/splash/presentation/screen/splash_view.dart';
-import 'package:ecommerce/feature/home/presentation/screen/home_view.dart';
 import 'package:go_router/go_router.dart';
 
 abstract class AppRouters {
