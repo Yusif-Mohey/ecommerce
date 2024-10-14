@@ -1,7 +1,8 @@
 // ignore_for_file: use_build_context_synchronously
 
 import 'package:ecommerce/core/utils/app_router.dart';
-import 'package:ecommerce/core/utils/constants/app_images.dart';
+import 'package:ecommerce/core/constants/app_images.dart';
+import 'package:ecommerce/feacture/splash/presentation/widgets/sliding_text.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -57,26 +58,5 @@ class _SplashViewBodyState extends State<SplashViewBody>
     Future.delayed(const Duration(seconds: 2), () {
       GoRouter.of(context).push(AppRouters.kHomeView);
     });
-  }
-}
-
-class SildingText extends StatelessWidget {
-  const SildingText({super.key, required this.animation});
-  final Animation<Offset> animation;
-
-  @override
-  Widget build(BuildContext context) {
-    return AnimatedBuilder(
-      animation: animation,
-      builder: (context, _) {
-        return SlideTransition(
-          position: animation,
-          child: const Text(
-            'Eay Shopping',
-            textAlign: TextAlign.center,
-          ),
-        );
-      },
-    );
   }
 }

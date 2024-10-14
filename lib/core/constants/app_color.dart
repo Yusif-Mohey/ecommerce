@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 abstract class AppColor {
-  static List<Color> appColors = const [
+  static List<Color> kAppColors = const [
     Color(0xff264653),
     Color(0xff287271),
     Color(0xff2a9d8f),
@@ -12,4 +12,5 @@ abstract class AppColor {
     Color(0xfff4a261),
     Color(0xffee8959),
   ];
+  static Color kScafoldBackGroundColor = const Color(0xffEEEEEE);
 }

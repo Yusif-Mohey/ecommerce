@@ -1,4 +1,5 @@
 import 'package:ecommerce/core/utils/app_router.dart';
+import 'package:ecommerce/core/constants/app_color.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp.router(
       routerConfig: AppRouters.router,
       theme: ThemeData().copyWith(
+        scaffoldBackgroundColor: AppColor.kScafoldBackGroundColor,
         textTheme: GoogleFonts.robotoCondensedTextTheme(),
       ),
       debugShowCheckedModeBanner: false,
