@@ -13,8 +13,12 @@ class DetailsView extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: AppColor.kScafoldBackGroundColor,
         leading: IconButton(
-            onPressed: () => GoRouter.of(context).pop(),
-            icon: const Icon(FontAwesomeIcons.arrowLeft)),
+          onPressed: () => GoRouter.of(context).pop(),
+          icon: const Icon(
+            FontAwesomeIcons.arrowLeft,
+            color: Colors.black,
+          ),
+        ),
       ),
       body: const DetailsViewBody(),
     );

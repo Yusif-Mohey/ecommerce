@@ -1,3 +1,4 @@
+import 'package:ecommerce/core/constants/app_color.dart';
 import 'package:flutter/material.dart';
 
 abstract class Styles {
@@ -7,11 +8,12 @@ abstract class Styles {
   );
   static const textStyle20 = TextStyle(
     fontSize: 20,
-    fontWeight: FontWeight.normal,
-  );
-  static const textStyle18 = TextStyle(
-    fontSize: 18,
     fontWeight: FontWeight.w700,
+  );
+  static TextStyle textStyle18 = const TextStyle(
+    fontSize: 18,
+    color: Colors.grey,
+    fontWeight: FontWeight.normal,
   );
   static TextStyle textStyle14 = TextStyle(
     fontSize: 14,
@@ -30,10 +32,8 @@ abstract class Styles {
     fontSize: 32,
     fontWeight: FontWeight.w600,
   );
-  static const textStyle28 = TextStyle(
-    fontSize: 28,
-    fontWeight: FontWeight.w600,
-  );
+  static TextStyle textStyle28 = TextStyle(
+      fontSize: 28, fontWeight: FontWeight.w600, color: AppColor.kAppColors[2]);
   static const textStyle30 = TextStyle(
     fontSize: 30,
     fontWeight: FontWeight.w600,

@@ -1,9 +1,9 @@
-import 'package:ecommerce/core/constants/app_color.dart';
 import 'package:ecommerce/core/constants/app_images.dart';
 import 'package:ecommerce/core/constants/app_shadow.dart';
 import 'package:ecommerce/core/utils/app_router.dart';
 import 'package:ecommerce/core/utils/styles.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_lorem/flutter_lorem.dart';
 import 'package:go_router/go_router.dart';
 
 class ProductItem extends StatefulWidget {
@@ -14,6 +14,7 @@ class ProductItem extends StatefulWidget {
 }
 
 class _ProductItemState extends State<ProductItem> {
+  String descriptions = lorem(paragraphs: 1, words: 70);
   bool check = false;
   @override
   Widget build(BuildContext context) {
@@ -42,11 +43,10 @@ class _ProductItemState extends State<ProductItem> {
                   children: [
                     Text(
                       'Dell Laptop',
-                      style: Styles.textStyle28
-                          .copyWith(color: AppColor.kAppColors[2]),
+                      style: Styles.textStyle28,
                     ),
                     Text(
-                      'Dell La Laptoellell Laptoppell LaLaptop ell Laptoell Laptoppell LaLaptop ell Laptoell Laptoppell LaLaptop ell Laptoell Laptoppell LaLaptop ell Laptoell Laptoppell LaLaptop ell Laptoell Laptoppell LaLaptop ell Laptoell Laptoppell LaLaptop ell Laptoell Laptoppell LaLaptop ell Laptoell Laptoppell Laptopell Laptopell Laptopell Laptop',
+                      'Product descriptions : $descriptions',
                       style: Styles.textStyle14,
                       maxLines: 3,
                       overflow: TextOverflow.ellipsis,
@@ -54,7 +54,7 @@ class _ProductItemState extends State<ProductItem> {
                     const Spacer(),
                     Row(
                       children: [
-                        const Text('234\$', style: Styles.textStyle18),
+                        const Text('234\$', style: Styles.textStyle20),
                         const Spacer(),
                         IconButton(
                           onPressed: () {
