@@ -2,9 +2,14 @@ import 'package:ecommerce/feacture/home/presentation/widgets/app_bar_section/cus
 import 'package:ecommerce/feacture/home/presentation/widgets/products_section/product_list_view.dart';
 import 'package:flutter/material.dart';
 
-class HomeViewBody extends StatelessWidget {
+class HomeViewBody extends StatefulWidget {
   const HomeViewBody({super.key});
 
+  @override
+  State<HomeViewBody> createState() => _HomeViewBodyState();
+}
+
+class _HomeViewBodyState extends State<HomeViewBody> {
   @override
   Widget build(BuildContext context) {
     return const SafeArea(

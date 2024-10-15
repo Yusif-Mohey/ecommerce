@@ -3,9 +3,15 @@ import 'package:ecommerce/core/constants/app_images.dart';
 import 'package:ecommerce/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 
-class ProductItem extends StatelessWidget {
+class ProductItem extends StatefulWidget {
   const ProductItem({super.key});
 
+  @override
+  State<ProductItem> createState() => _ProductItemState();
+}
+
+class _ProductItemState extends State<ProductItem> {
+  bool check = false;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -19,11 +25,11 @@ class ProductItem extends StatelessWidget {
                 color: Colors.black.withOpacity(0.2),
                 offset: const Offset(0, 10.0),
                 spreadRadius: 0.1,
-                blurRadius: 30,
+                blurRadius: 13,
                 blurStyle: BlurStyle.normal)
           ]),
       child: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(8.0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
@@ -53,12 +59,15 @@ class ProductItem extends StatelessWidget {
                       const Text('234\$', style: Styles.textStyle18),
                       const Spacer(),
                       IconButton(
-                        onPressed: () {},
-                        icon: Icon(
-                          Icons.shopping_cart_outlined,
-                          color: AppColor.kAppColors[2],
-                        ),
-                      ),
+                        onPressed: () {
+                          setState(() {
+                            check = !check;
+                          });
+                        },
+                        icon: check
+                            ? const Icon(Icons.shopping_cart_rounded)
+                            : const Icon(Icons.shopping_cart_outlined),
+                      )
                     ],
                   ),
                 ],
@@ -71,55 +80,55 @@ class ProductItem extends StatelessWidget {
   }
 }
 
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
-//search for  web socket
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
+//search for  web socket for notifications
