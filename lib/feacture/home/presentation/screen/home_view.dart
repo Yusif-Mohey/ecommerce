@@ -17,25 +17,25 @@ class HomeView extends StatelessWidget {
                 FontAwesomeIcons.house,
                 color: AppColor.kAppColors[2],
               ),
-              label: "Screen D"),
+              label: " "),
           BottomNavigationBarItem(
               icon: FaIcon(
                 FontAwesomeIcons.solidHeart,
                 color: AppColor.kAppColors[2],
               ),
-              label: "Screen D"),
+              label: " "),
           BottomNavigationBarItem(
               icon: Icon(
                 FontAwesomeIcons.cartShopping,
                 color: AppColor.kAppColors[2],
               ),
-              label: "Screen D"),
+              label: " "),
           BottomNavigationBarItem(
               icon: Icon(
                 FontAwesomeIcons.solidUser,
                 color: AppColor.kAppColors[2],
               ),
-              label: "Screen D"),
+              label: " "),
         ],
       ),
     );

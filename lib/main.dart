@@ -15,9 +15,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp.router(
       routerConfig: AppRouters.router,
       theme: ThemeData().copyWith(
-          scaffoldBackgroundColor: AppColor.kScafoldBackGroundColor,
-          textTheme: GoogleFonts.robotoCondensedTextTheme(),
-          iconTheme: IconThemeData(color: AppColor.kAppColors[2])),
+        scaffoldBackgroundColor: AppColor.kScafoldBackGroundColor,
+        textTheme: GoogleFonts.robotoCondensedTextTheme(),
+        iconTheme: IconThemeData(color: AppColor.kAppColors[2]),
+        iconButtonTheme: IconButtonThemeData(
+            style: ButtonStyle(
+                iconColor: WidgetStateProperty.all(AppColor.kAppColors[2]))),
+      ),
       debugShowCheckedModeBanner: false,
     );
   }

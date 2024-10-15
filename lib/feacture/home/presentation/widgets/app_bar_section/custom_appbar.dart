@@ -16,7 +16,7 @@ class CustomAppBar extends StatelessWidget {
           style: Styles.textStyle32.copyWith(color: AppColor.kAppColors[2]),
         ),
         Text(
-          'Best Suoq Ever',
+          'Best Suoq Ever !!',
           style: Styles.textStyle20.copyWith(fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 16),
