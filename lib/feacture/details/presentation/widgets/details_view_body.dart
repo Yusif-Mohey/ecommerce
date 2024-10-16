@@ -12,13 +12,13 @@ class DetailsViewBody extends StatefulWidget {
 class _DetailsViewBodyState extends State<DetailsViewBody> {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16.0),
+    return const Padding(
+        padding: EdgeInsets.symmetric(horizontal: 16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const ProductInformations(),
-            const SizedBox(height: 32),
+            ProductInformations(),
+            SizedBox(height: 32),
             Quaitiy(),
           ],
         ));
