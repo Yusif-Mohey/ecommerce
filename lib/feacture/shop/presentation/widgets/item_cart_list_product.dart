@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../../../../core/constants/app_color.dart';
 import '../../../../core/constants/app_images.dart';
-import '../../../../core/constants/app_shadow.dart';
 import '../../../../core/constants/raduis.dart';
 
 class ItemCartListProduct extends StatelessWidget {
@@ -15,7 +14,7 @@ class ItemCartListProduct extends StatelessWidget {
       width: MediaQuery.of(context).size.width / 1.5,
       height: MediaQuery.of(context).size.height / 1.8,
       decoration: BoxDecoration(
-          boxShadow: [kItemShadow],
+          // boxShadow: [kItemShadow],
           color: Colors.white,
           borderRadius: kBoderRaduis),
       child: Padding(
