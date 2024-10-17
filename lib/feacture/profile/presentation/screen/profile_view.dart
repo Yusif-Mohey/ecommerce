@@ -9,7 +9,7 @@ class ProfileView extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: ProfileViewBody(),
-      bottomNavigationBar: AppBottomNavigatoinBar(),
+      bottomNavigationBar: AppBottomNavigationBar(),
     );
   }
 }

@@ -4,42 +4,54 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:go_router/go_router.dart';
 import '../constants/app_color.dart';
 
-class AppBottomNavigatoinBar extends StatelessWidget {
-  const AppBottomNavigatoinBar({
+class AppBottomNavigationBar extends StatefulWidget {
+  const AppBottomNavigationBar({
     super.key,
   });
 
   @override
+  State<AppBottomNavigationBar> createState() => _AppBottomNavigationBarState();
+}
+
+class _AppBottomNavigationBarState extends State<AppBottomNavigationBar> {
+  int selectedIndex = 0;
+
+  @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-      items: [
+      items: const [
         BottomNavigationBarItem(
-            icon: FaIcon(
-              FontAwesomeIcons.house,
-              color: AppColor.kAppColors[2],
-            ),
-            label: " "),
+          icon: FaIcon(
+            FontAwesomeIcons.house,
+          ),
+          label: " ",
+        ),
         BottomNavigationBarItem(
-            icon: FaIcon(
-              FontAwesomeIcons.solidHeart,
-              color: AppColor.kAppColors[2],
-            ),
-            label: " "),
+          icon: FaIcon(
+            FontAwesomeIcons.heart,
+          ),
+          label: " ",
+        ),
         BottomNavigationBarItem(
-            icon: Icon(
-              FontAwesomeIcons.cartShopping,
-              color: AppColor.kAppColors[2],
-            ),
-            label: " "),
+          icon: FaIcon(
+            FontAwesomeIcons.cartShopping,
+          ),
+          label: " ",
+        ),
         BottomNavigationBarItem(
-            icon: Icon(
-              FontAwesomeIcons.solidUser,
-              color: AppColor.kAppColors[2],
-            ),
-            label: " "),
+          icon: FaIcon(
+            FontAwesomeIcons.user,
+          ),
+          label: " ",
+        ),
       ],
-      currentIndex: 0,
+      currentIndex: selectedIndex,
+      selectedItemColor: AppColor.kAppColors[0],
+      unselectedItemColor: AppColor.kAppColors[2],
       onTap: (index) {
+        setState(() {
+          selectedIndex = index;
+        });
         switch (index) {
           case 0:
             GoRouter.of(context).push(AppRouters.kHomeView);

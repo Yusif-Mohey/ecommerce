@@ -9,7 +9,7 @@ class FavoriteView extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: FavoriteViewBody(),
-      bottomNavigationBar: AppBottomNavigatoinBar(),
+      bottomNavigationBar: AppBottomNavigationBar(),
     );
   }
 }
