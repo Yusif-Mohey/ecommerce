@@ -13,7 +13,6 @@ class ProductInformations extends StatefulWidget {
 }
 
 class _ProductInformationsState extends State<ProductInformations> {
-  String descriptions = lorem(paragraphs: 1, words: 50);
   bool check = false;
   @override
   Widget build(BuildContext context) {
@@ -46,7 +45,7 @@ class _ProductInformationsState extends State<ProductInformations> {
                   Text('Product Name', style: Styles.textStyle28),
                   const SizedBox(height: 16),
                   Text(
-                    'product descriptions : $descriptions',
+                    'product descriptions : ${lorem(paragraphs: 1, words: 20)}',
                     style: Styles.textStyle18,
                     softWrap: true,
                     overflow: TextOverflow.visible,
