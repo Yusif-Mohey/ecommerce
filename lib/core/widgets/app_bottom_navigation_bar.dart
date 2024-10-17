@@ -19,39 +19,50 @@ class _AppBottomNavigationBarState extends State<AppBottomNavigationBar> {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-      items: const [
+      items: [
         BottomNavigationBarItem(
           icon: FaIcon(
             FontAwesomeIcons.house,
+            color: selectedIndex == 0
+                ? AppColor.kAppColors[0]
+                : AppColor.kAppColors[2],
           ),
-          label: " ",
+          label: "Home",
         ),
         BottomNavigationBarItem(
           icon: FaIcon(
             FontAwesomeIcons.heart,
+            color: selectedIndex == 1
+                ? AppColor.kAppColors[0]
+                : AppColor.kAppColors[2],
           ),
-          label: " ",
+          label: "Favorite",
         ),
         BottomNavigationBarItem(
           icon: FaIcon(
             FontAwesomeIcons.cartShopping,
+            color: selectedIndex == 2
+                ? AppColor.kAppColors[0]
+                : AppColor.kAppColors[2],
           ),
-          label: " ",
+          label: "Cart",
         ),
         BottomNavigationBarItem(
           icon: FaIcon(
             FontAwesomeIcons.user,
+            color: selectedIndex == 3
+                ? AppColor.kAppColors[0]
+                : AppColor.kAppColors[2],
           ),
-          label: " ",
+          label: "Profile",
         ),
       ],
       currentIndex: selectedIndex,
-      selectedItemColor: AppColor.kAppColors[0],
-      unselectedItemColor: AppColor.kAppColors[2],
       onTap: (index) {
         setState(() {
           selectedIndex = index;
         });
+
         switch (index) {
           case 0:
             GoRouter.of(context).push(AppRouters.kHomeView);

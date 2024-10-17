@@ -1,3 +1,5 @@
+import 'package:ecommerce/core/constants/app_color.dart';
+import 'package:ecommerce/core/utils/styles.dart';
 import 'package:ecommerce/feacture/shop/presentation/widgets/cart_view_body.dart';
 import 'package:flutter/material.dart';
 
@@ -8,9 +10,18 @@ class CartView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: CartViewBody(),
-      bottomNavigationBar: AppBottomNavigationBar(),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          backgroundColor: AppColor.kScafoldBackGroundColor,
+          leading: Center(
+              child: Text('Cart',
+                  style: Styles.textStyle20
+                      .copyWith(fontWeight: FontWeight.normal))),
+        ),
+        body: const CartViewBody(),
+        bottomNavigationBar: const AppBottomNavigationBar(),
+      ),
     );
   }
 }
