@@ -1,3 +1,4 @@
+import 'package:ecommerce/core/widgets/app_bottom_navigation_bar.dart';
 import 'package:ecommerce/feacture/details/presentation/screen/details_view.dart';
 import 'package:ecommerce/feacture/favorite/presentation/screen/favorite_view.dart';
 import 'package:ecommerce/feacture/home/presentation/screen/home_view.dart';
@@ -7,7 +8,8 @@ import 'package:ecommerce/feacture/splash/presentation/screen/splash_view.dart';
 import 'package:go_router/go_router.dart';
 
 abstract class AppRouters {
-  static const kHomeView = '/HomeView';
+  static const kHomeView = '/kHomeView';
+  static const kBottomNavigationBar = '/kBottomNavigationBar';
   static const kCartView = '/kCartView';
   static const kProfileView = '/kProfileView';
   static const kFavoriteView = '/kFavoriteView';
@@ -37,6 +39,10 @@ abstract class AppRouters {
       GoRoute(
         path: kProfileView,
         builder: (context, state) => const ProfileView(),
+      ),
+      GoRoute(
+        path: kBottomNavigationBar,
+        builder: (context, state) => const AppBottomNavigationBar(),
       ),
     ],
   );

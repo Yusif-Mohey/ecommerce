@@ -1,4 +1,9 @@
 import 'package:ecommerce/core/utils/app_router.dart';
+import 'package:ecommerce/feacture/details/presentation/screen/details_view.dart';
+import 'package:ecommerce/feacture/favorite/presentation/screen/favorite_view.dart';
+import 'package:ecommerce/feacture/home/presentation/screen/home_view.dart';
+import 'package:ecommerce/feacture/profile/presentation/screen/profile_view.dart';
+import 'package:ecommerce/feacture/shop/presentation/screen/cart_view.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:go_router/go_router.dart';
@@ -16,68 +21,52 @@ class AppBottomNavigationBar extends StatefulWidget {
 class _AppBottomNavigationBarState extends State<AppBottomNavigationBar> {
   int selectedIndex = 0;
 
+  final List _views = const [
+    HomeView(),
+    FavoriteView(),
+    CartView(),
+    ProfileView(),
+  ];
   @override
   Widget build(BuildContext context) {
-    return BottomNavigationBar(
-      items: [
-        BottomNavigationBarItem(
-          icon: FaIcon(
-            FontAwesomeIcons.house,
-            color: selectedIndex == 0
-                ? AppColor.kAppColors[0]
-                : AppColor.kAppColors[2],
+    return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+        items: const [
+          BottomNavigationBarItem(
+            icon: FaIcon(
+              FontAwesomeIcons.house,
+            ),
+            label: "Home",
           ),
-          label: "Home",
-        ),
-        BottomNavigationBarItem(
-          icon: FaIcon(
-            FontAwesomeIcons.heart,
-            color: selectedIndex == 1
-                ? AppColor.kAppColors[0]
-                : AppColor.kAppColors[2],
+          BottomNavigationBarItem(
+            icon: FaIcon(
+              FontAwesomeIcons.heart,
+            ),
+            label: "Favorite",
           ),
-          label: "Favorite",
-        ),
-        BottomNavigationBarItem(
-          icon: FaIcon(
-            FontAwesomeIcons.cartShopping,
-            color: selectedIndex == 2
-                ? AppColor.kAppColors[0]
-                : AppColor.kAppColors[2],
+          BottomNavigationBarItem(
+            icon: FaIcon(
+              FontAwesomeIcons.cartShopping,
+            ),
+            label: "Cart",
           ),
-          label: "Cart",
-        ),
-        BottomNavigationBarItem(
-          icon: FaIcon(
-            FontAwesomeIcons.user,
-            color: selectedIndex == 3
-                ? AppColor.kAppColors[0]
-                : AppColor.kAppColors[2],
+          BottomNavigationBarItem(
+            icon: FaIcon(
+              FontAwesomeIcons.user,
+            ),
+            label: "Profile",
           ),
-          label: "Profile",
-        ),
-      ],
-      currentIndex: selectedIndex,
-      onTap: (index) {
-        setState(() {
-          selectedIndex = index;
-        });
-
-        switch (index) {
-          case 0:
-            GoRouter.of(context).push(AppRouters.kHomeView);
-            break;
-          case 1:
-            GoRouter.of(context).push(AppRouters.kFavoriteView);
-            break;
-          case 2:
-            GoRouter.of(context).push(AppRouters.kCartView);
-            break;
-          case 3:
-            GoRouter.of(context).push(AppRouters.kProfileView);
-            break;
-        }
-      },
+        ],
+        currentIndex: selectedIndex,
+        selectedItemColor: AppColor.kAppColors[1],
+        unselectedItemColor: AppColor.kAppColors[2],
+        onTap: (index) {
+          setState(() {
+            selectedIndex = index;
+          });
+        },
+      ),
+      body: _views[selectedIndex],
     );
   }
 }

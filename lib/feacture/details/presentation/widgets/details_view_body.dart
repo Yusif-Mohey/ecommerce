@@ -14,40 +14,43 @@ class DetailsViewBody extends StatefulWidget {
 class _DetailsViewBodyState extends State<DetailsViewBody> {
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        const Padding(
-          padding: EdgeInsets.symmetric(horizontal: 16.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              ProductInformations(),
-              SizedBox(height: 24),
-              Quaitiy(),
-            ],
-          ),
-        ),
-        Positioned(
-          bottom: 16,
-          left: 16,
-          right: 16,
-          child: SizedBox(
-            child: Row(
+    return SingleChildScrollView(
+      child: Stack(
+        children: [
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Expanded(
-                  child: CustomBotton(
-                    onTap: () {},
-                    content: 'Add To Cart',
-                    isLoading: false,
-                  ),
-                ),
-                const SizedBox(width: 8),
-                const Text('245\$', style: Styles.textStyle20),
+                ProductInformations(),
+                SizedBox(height: 24),
+                Quaitiy(),
+                SizedBox(height: 100),
               ],
             ),
           ),
-        )
-      ],
+          Positioned(
+            bottom: 16,
+            left: 16,
+            right: 16,
+            child: SizedBox(
+              child: Row(
+                children: [
+                  Expanded(
+                    child: CustomBotton(
+                      onTap: () {},
+                      content: 'Add To Cart',
+                      isLoading: false,
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  const Text('245\$', style: Styles.textStyle20),
+                ],
+              ),
+            ),
+          )
+        ],
+      ),
     );
   }
 }

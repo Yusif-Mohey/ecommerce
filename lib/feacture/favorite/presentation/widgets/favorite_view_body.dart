@@ -5,8 +5,10 @@ class FavoriteViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [Container(), const Text('qwertgh')],
+    return SafeArea(
+      child: Column(
+        children: [Container(), const Text('qwertgh')],
+      ),
     );
   }
 }
