@@ -1,6 +1,6 @@
 import 'package:ecommerce/core/constants/app_color.dart';
-import 'package:ecommerce/feacture/profile/presentation/widget/profile_actions_list_section/profile_info_.dart';
-import 'package:ecommerce/feacture/profile/presentation/widget/profile_element_section/profile_actions_list.dart';
+import 'package:ecommerce/feacture/profile/presentation/widget/profile_View/profile_actions_list_section/profile_info_.dart';
+import 'package:ecommerce/feacture/profile/presentation/widget/profile_View/profile_element_section/profile_actions_list.dart';
 import 'package:flutter/material.dart';
 
 class ProfileViewBody extends StatelessWidget {

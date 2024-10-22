@@ -19,24 +19,27 @@ class ItemProfileView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(18.0),
-      child: Row(
-        children: [
-          Icon(icon),
-          const SizedBox(width: 32),
-          Text(
-            content,
-            style: Styles.textStyle16.copyWith(fontWeight: FontWeight.normal),
-          ),
-          const Spacer(),
-          IconButton(
-              onPressed: onpress,
-              icon: Icon(
-                tailingIcon,
-                color: isHere
-                    ? AppColor.kAppColors[2]
-                    : AppColor.kScafoldBackGroundColor,
-              )),
-        ],
+      child: GestureDetector(
+        onTap: onpress,
+        child: Row(
+          children: [
+            Icon(icon),
+            const SizedBox(width: 32),
+            Text(
+              content,
+              style: Styles.textStyle16.copyWith(fontWeight: FontWeight.normal),
+            ),
+            const Spacer(),
+            IconButton(
+                onPressed: onpress,
+                icon: Icon(
+                  tailingIcon,
+                  color: isHere
+                      ? AppColor.kAppColors[2]
+                      : AppColor.kScafoldBackGroundColor,
+                )),
+          ],
+        ),
       ),
     );
   }

@@ -11,7 +11,7 @@ class ProfileInfo extends StatelessWidget {
     return ListTile(
       leading: CircleAvatar(
           backgroundColor: AppColor.kScafoldBackGroundColor,
-          child: Image.asset(AppImages.splash)),
+          child: Image.asset(AppImages.user)),
       title: Text(
         'Name',
         style: Styles.textStyle16.copyWith(

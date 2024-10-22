@@ -13,9 +13,10 @@ class FavoriteItem extends StatelessWidget {
       width: double.infinity,
       height: MediaQuery.of(context).size.height / 6,
       decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(24),
-          boxShadow: [kItemShadow]),
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(24),
+        boxShadow: [kItemShadow],
+      ),
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Row(
