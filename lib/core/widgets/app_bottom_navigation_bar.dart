@@ -1,12 +1,10 @@
-import 'package:ecommerce/core/utils/app_router.dart';
-import 'package:ecommerce/feacture/details/presentation/screen/details_view.dart';
 import 'package:ecommerce/feacture/favorite/presentation/screen/favorite_view.dart';
 import 'package:ecommerce/feacture/home/presentation/screen/home_view.dart';
 import 'package:ecommerce/feacture/profile/presentation/screen/profile_view.dart';
 import 'package:ecommerce/feacture/shop/presentation/screen/cart_view.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:go_router/go_router.dart';
+
 import '../constants/app_color.dart';
 
 class AppBottomNavigationBar extends StatefulWidget {

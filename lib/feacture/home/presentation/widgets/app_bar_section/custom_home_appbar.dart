@@ -3,8 +3,8 @@ import 'package:ecommerce/core/utils/styles.dart';
 import 'package:ecommerce/feacture/home/presentation/widgets/app_bar_section/custom_search_appbar.dart';
 import 'package:flutter/material.dart';
 
-class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({super.key});
+class CustomHomeAppBar extends StatelessWidget {
+  const CustomHomeAppBar({super.key});
 
   @override
   Widget build(BuildContext context) {
