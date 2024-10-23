@@ -5,7 +5,7 @@ import 'package:ecommerce/feacture/home/presentation/screen/home_view.dart';
 import 'package:ecommerce/feacture/profile/presentation/screens/my_orders_view.dart';
 import 'package:ecommerce/feacture/profile/presentation/screens/profile_view.dart';
 import 'package:ecommerce/feacture/shop/presentation/screen/cart_view.dart';
-import 'package:ecommerce/feacture/splash/presentation/screen/splash_view.dart';
+import 'package:ecommerce/feacture/splash/presentation/screens/splash_view.dart';
 import 'package:go_router/go_router.dart';
 
 abstract class AppRouters {

@@ -1,4 +1,4 @@
-import 'package:ecommerce/feacture/splash/presentation/widgets/splash_view_body.dart';
+import 'package:ecommerce/feacture/splash/presentation/widgets/splash_view_section/splash_view_body.dart';
 import 'package:flutter/material.dart';
 
 class SplashView extends StatelessWidget {

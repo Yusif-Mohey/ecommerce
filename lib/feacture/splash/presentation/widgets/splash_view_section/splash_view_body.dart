@@ -2,7 +2,7 @@
 
 import 'package:ecommerce/core/utils/app_router.dart';
 import 'package:ecommerce/core/constants/app_images.dart';
-import 'package:ecommerce/feacture/splash/presentation/widgets/sliding_text.dart';
+import 'package:ecommerce/feacture/splash/presentation/widgets/splash_view_section/widgets/sliding_text.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
