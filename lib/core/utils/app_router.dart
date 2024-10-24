@@ -35,11 +35,11 @@ abstract class AppRouters {
         builder: (context, state) => const MyOrdersView(),
       ),
       GoRoute(
-        path: '/',
+        path: kLoginView,
         builder: (context, state) => const LoginView(),
       ),
       GoRoute(
-        path: kSignUpView,
+        path: '/',
         builder: (context, state) => const SignupView(),
       ),
       /* GoRoute(
